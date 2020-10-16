@@ -15,10 +15,10 @@ class CreateSchemaFull extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
             $table->string('user');
             $table->string('password');
             $table->string('api_token')->nullable();
+            $table->string('fb_token')->nullable();
             $table->timestamps();
         });
 
@@ -27,6 +27,7 @@ class CreateSchemaFull extends Migration
             $table->string('title');
             $table->string('text');
             $table->dateTime('programed')->nullable();
+            $table->string('image_url')->nullable();
             $table->foreignId('user_id')
                 ->constrained('users');
             $table->timestamps();
@@ -40,6 +41,7 @@ class CreateSchemaFull extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('schema_full');
+        Schema::dropIfExists('notes');
+        Schema::dropIfExists('users');
     }
 }

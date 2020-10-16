@@ -15,11 +15,29 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => 'Lubin',
+        $userId = DB::table('users')->insertGetId([
             'user' => 'lubin',
             'password' => Hash::make('prueba'),
-            'api_token' => 'prueba'
+            'api_token' => 'prueba',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        DB::table('notes')->insert([
+            [
+                'title' => 'Nueva nota',
+                'text' => 'Super nota',
+                'programed' => null ,
+                'user_id' => $userId,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],[
+                'title' => 'Nota programada',
+                'text' => 'Text....',
+                'programed' => now()->addDay(),
+                'user_id' => $userId,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]
         ]);
     }
 }
