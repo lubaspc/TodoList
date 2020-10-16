@@ -13,7 +13,6 @@ class UserWS extends JsonResource
     {
         return [
             'user' => $this->user,
-            'name' => $this->name,
             'api_token' => $this->api_token
         ];
     }
