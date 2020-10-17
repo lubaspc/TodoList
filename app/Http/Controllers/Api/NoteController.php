@@ -25,8 +25,8 @@ class NoteController extends Controller
     {
         $note = new Note($request->all());
         if ($request->input('programed_time', '') != '') {
-            $note->programed = Carbon::createFromTimestampMs(
-                $request->input('programed_time'));
+            $note->programed = Carbon::parse(
+                $request->input('programed'));
         }
         $note->user_id = \Auth::id();
         if (!$note->save()) {
@@ -47,8 +47,8 @@ class NoteController extends Controller
         $note = Note::find($noteId);
         $note->fill($request->all());
         if ($request->input('programed_time', '') != '') {
-            $note->programed = Carbon::createFromTimestampMs(
-                $request->input('programed_time'));
+            $note->programed = Carbon::parse(
+                $request->input('programed'));
         }else $note->programed = null;
 
         if (!$note->save()) {
@@ -59,7 +59,7 @@ class NoteController extends Controller
         }
         return response()->json([
             'success' => true,
-            'message' => ''
+            'message' => '',
         ]);
     }
 

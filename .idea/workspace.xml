@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98b581c6-b434-4874-a0c7-2912fe8666ab" name="Default Changelist" comment="Compelte schema">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Response/UserWS.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Response/UserWS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/NoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/NoteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Response/NoteWS.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Response/NoteWS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Note.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Note.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_15_005018_create_schema_full.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_15_005018_create_schema_full.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +206,9 @@
       <option name="presentableId" value="Default" />
       <updated>1602721267205</updated>
       <workItem from="1602721268284" duration="6503000" />
-      <workItem from="1602771194702" duration="9894000" />
+      <workItem from="1602771194702" duration="9933000" />
+      <workItem from="1602861074946" duration="5147000" />
+      <workItem from="1602884104692" duration="7136000" />
     </task>
     <task id="LOCAL-00001" summary="Complete app">
       <created>1602787570659</created>
@@ -225,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602819061789</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Compelte schema">
+      <created>1602822708200</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602822708201</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +254,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete app" />
@@ -248,14 +262,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Compelte schema" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="278" y="59" width="800" height="683" key="#Deployment" timestamp="1602772138227">
+    <state x="278" y="59" width="800" height="683" key="#Deployment" timestamp="1602822738639">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="278" y="59" width="800" height="683" key="#Deployment/0.28.1366.740@0.28.1366.740" timestamp="1602772138227" />
-    <state x="273" y="57" width="809" height="687" key="#Options" timestamp="1602721362228">
+    <state x="278" y="59" width="800" height="683" key="#Deployment/0.28.1366.740@0.28.1366.740" timestamp="1602822738639" />
+    <state x="273" y="57" width="809" height="687" key="#Options" timestamp="1602822728968">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="273" y="57" width="809" height="687" key="#Options/0.28.1366.740@0.28.1366.740" timestamp="1602721362228" />
+    <state x="273" y="57" width="809" height="687" key="#Options/0.28.1366.740@0.28.1366.740" timestamp="1602822728968" />
     <state x="366" y="85" width="800" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602723402993">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -264,10 +278,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="370" y="121" width="727" height="565" key="NewPhpClassDialog/0.28.1366.740@0.28.1366.740" timestamp="1602724649758" />
-    <state x="278" y="134" width="800" height="534" key="Vcs.Push.Dialog.v2" timestamp="1602822699313">
+    <state x="278" y="134" width="800" height="534" key="Vcs.Push.Dialog.v2" timestamp="1602822712085">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="278" y="134" width="800" height="534" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1602822699313" />
+    <state x="278" y="134" width="800" height="534" key="Vcs.Push.Dialog.v2/0.28.1366.740@0.28.1366.740" timestamp="1602822712085" />
     <state x="511" y="161" width="333" height="479" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1602724579272">
       <screen x="0" y="28" width="1366" height="740" />
     </state>

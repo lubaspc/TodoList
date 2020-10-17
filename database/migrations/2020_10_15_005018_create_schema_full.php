@@ -25,8 +25,9 @@ class CreateSchemaFull extends Migration
         Schema::create('notes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('text');
+            $table->string('text')->nullable()->default("");
             $table->dateTime('programed')->nullable();
+            $table->boolean('complete')->default(false);
             $table->string('image_url')->nullable();
             $table->foreignId('user_id')
                 ->constrained('users');
